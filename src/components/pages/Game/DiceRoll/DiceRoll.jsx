@@ -98,10 +98,10 @@ const DiceRoll = () => {
         aria-disabled={isRolling}
       />
       <p className="text-lg poppins-medium mt-1 mb-4">Click on Dice to roll</p>
-      <Button white={true} className="mb-4" onClick={resetScoreHandler}>
+      <Button white={true} className="mb-4 hover:bg-slate-400" onClick={resetScoreHandler}>
         Reset Score
       </Button>
-      <Button white={false} onClick={showRulesHandler}>
+      <Button white={false} onClick={showRulesHandler} className='hover:bg-slate-500'>
         Show Rules
       </Button>
       {showRules && <Rules fadeOut={fadeOut} />}
